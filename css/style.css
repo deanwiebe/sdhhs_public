@@ -1,0 +1,1253 @@
+@import 'modules/membership-page.css';
+
+/* GLOBALS */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;  
+}
+span{
+    color:  #9dcd5a
+}
+span:hover{
+    font-size: 1.1em;
+    text-shadow: 5px 5px 15px 5px #000000;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #23578f;
+}
+.wpforms-container.wpf-center {
+    margin: 0 auto !important;
+    max-width: 800px;
+}
+/* END GLOBALS */
+/*BEGIN HEADER.PHP*/
+header{
+    border-bottom: 10px solid #003c4f;
+}
+/*BEGIN MOBILE HEADER*/
+  .topnav {
+    overflow: hidden;
+    position: relative;
+    display: none;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    background-color: #003c4f;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav .custom-logo-link{
+      padding: 0;
+  }
+  .topnav a.icon {
+    background: #003c4f;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  /**************************************************************Custom logo mobile*************************************/
+  @media (max-width: 767px) {
+    .mobile-logo img {
+        margin-top: 45px;
+        width: 370px;
+        height: 130px;
+    }
+}
+ /**************************************************************END Custom logo mobile*************************************/
+/*END MOBILE HEADER*/
+.site-header .container1{
+    color: white;
+    padding: 5px ;
+    background: #003c4f;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav1{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.nav1 ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav1 ul li{
+   margin: 0 10px;
+}
+.menu-item-160 a{
+    color: #9dcd5a !important;
+}
+.nav1 ul li a{
+    color: white;
+}
+
+.site-header .container2{
+    color: #003c4f;
+    padding: 10px 50px ;
+    font-size: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 40px;
+}
+.nav2{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap-reverse;
+    position: relative;
+}
+@media only screen and (max-width: 1120px) {
+  
+    .donate_button{
+        display: none;
+    }
+    .nav2{
+        justify-content: end;
+    }
+    .site-header .container2{
+        display: block;
+    }
+  }
+.menu{
+    display: flex;
+    list-style-type: none;
+}
+.nav2 ul li{
+   margin: 0 10px;
+}
+.nav2 ul li a{
+    color: #003c4f;
+}
+
+.donate_button{
+    background: #003c4f;
+    padding: 10px 40px;
+    margin-left: 90px;
+    border-radius: 10px;
+}
+#donate{
+    color: #93bbe5;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+ .donate_footer{
+    color: #003c4f;
+}
+.nav2 a{
+    color: #93bbe5;
+}
+.current-menu-item a{
+    color: #9dcd5a !important;
+}
+.menu-item:hover .sub-menu{
+    display: block;
+}
+.sub-menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.sub-menu .menu-item a{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 5;
+  }
+header hr{
+    border: 1px solid #003c4f;
+}
+.top-of-banner-access{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3em;
+    color: #93bbe5;
+}
+.top-of-banner-asl{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3em;
+    color: #9dcd5a;
+}
+.access-button{
+    margin-right: 10px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    background-color: #003c4f;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    cursor: grab;
+}
+
+.top-of-banner-access{
+    position: absolute;
+    right: 50px;
+    z-index: 4;
+}
+.top-of-banner-asl{
+    position: absolute;
+    right: 125px;
+    z-index: 4;
+    cursor: pointer;
+}
+.top-of-banner-asl-services{
+    position: absolute;
+    right: 125px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+/*ACCESSABILIT CONTROLS*/
+.accessControls{
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    z-index: 3;
+}
+.text-options{
+    border: #003c4f solid 1px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+@media only screen and (max-width: 588px) {
+  
+    .accessControls{
+        width: 90%;
+    }
+    .top-of-banner-asl{
+        position: absolute;
+        left: -10px;
+        right: unset;
+        transform: rotate(180deg);
+    }
+    .top-of-banner-access{
+        position: absolute;
+        right: -10px;
+    }
+    .access-button{
+        transform: rotate(90deg);
+    }
+    .access-button svg{
+        transform: rotate(90deg);
+    }
+    .access-button i {
+        transform: rotate(-90deg);
+    }
+    .topnav{
+        text-align: center;
+    }
+  }
+
+/*END ACCESSABILITU CONTROLS*/
+/*END HEADER*/
+
+/*BEGIN BANNER*/
+.front-page-banner{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 10px solid #003c4f;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 10px solid #003c4f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.banner-image{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 10px;
+    clip-path: polygon(0 0, 95% 0%, 100% 100%, 0% 100%);
+}
+.banner-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 95% 0%, 100% 100%, 0% 100%);
+}
+video{
+    width: 100%;
+    clip-path: polygon(0 0, 94.75% 0%, 100% 100%, 0% 100%);
+}
+.tagline{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.front-page{
+    align-items: flex-end;
+    padding-right: 50px;
+    line-height: 2;
+}
+.tagline p{
+    font-size: 1.5em;
+    padding: 0;
+}
+.tagline strong span{
+    font-size: 1.5em;
+}
+/* *************************************************************MEDIA QUERIES */
+
+@media screen and (max-width: 1693px) {
+    .tagline p{
+        font-size: 1.3em;
+    }
+    .tagline strong span{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 1481px) {
+    .tagline p{
+        font-size: 1em;
+    }
+    .tagline strong span{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .tagline p{
+        font-size: 0.9em;
+    }
+    .tagline strong span{
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 886px) {
+    .tagline p{
+        font-size: 0.8em;
+    }
+    .tagline strong span{
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width: 806px) {
+    .tagline p{
+        font-size: 0.7em;
+    }
+    .tagline strong span{
+        font-size: 1.6em;
+    }
+}
+@media screen and (max-width: 414px) {
+    .tagline{
+        padding-right: 0;
+    }
+    .banner-image{
+        display: none;
+    }
+    
+ }
+@media screen and (max-width: 375px) {
+   .tagline{
+       display: none;
+   }
+   .banner-image{
+       display: none;
+   }
+   
+}
+/*Slide in page video page-asl*/
+.page-asl{
+ position: absolute;
+ right: 20px;
+ z-index: 1;
+}
+@media screen and (max-width: 588px) {
+    .page-asl iframe{
+        width: 255px;
+        height: 200px;
+       }
+    .page-asl{
+        right: 60px;
+    }
+ }
+/*END BANNER*/
+/*BEGIN FRONT-PAGE.php MAIN-CONTENT*/
+.main{
+    border-top: 10px solid #9dcd5a;
+    padding-top: 10px;
+}
+.mainLinks{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    bottom: -80px;
+    -webkit-box-shadow: 5px 5px 15px -1px #000; 
+    box-shadow: 5px 5px 15px -1px #000;
+}
+@media screen and (max-width: 375px) {
+    .mainLinks{
+        width: unset;
+    }
+ }
+.mainLinks h2{
+    color: #23578f;
+}
+.mainLinks ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.mainLinks ul li{
+    text-align: center;
+    padding: 40px;
+}
+.mainLinks ul li i{
+   font-size: 3em;
+}
+.mainLinks ul li a{
+    color: #003c4f;
+}
+.mainPosts{
+    background-color: #003c4f;
+    padding-bottom: 200px;
+}
+.postsContainer{
+    background-color: white;
+    width: 80%;
+    padding-top: 30px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    bottom: 50px;
+    -webkit-box-shadow: 5px 5px 15px -1px #000; 
+    box-shadow: 5px 5px 15px -1px #000;
+}
+@media screen and (max-width: 414px) {
+    .postsContainer{
+        width: unset;
+    }
+ }
+.postsContainer h1{
+    font-size: 2.5em;
+}
+.mainPosts h1{
+    text-align: center;
+    margin: 20px auto;
+}
+.mainPostTitles{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.mainPosts ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.card{
+    padding-bottom: 10px;
+    margin: 20px;
+    width: 17em !important;
+}
+.card #card-pic{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.card img{
+    transition: transform 0.5s;
+    width: 17em;
+}
+.card img:hover{
+    transform: rotate(-5deg);
+    z-index: 0;
+    }
+.card a{
+    color: #003c4f;
+}
+.card-body{
+    position: relative;
+    margin-top: 10px;
+}
+.card-body span{
+    font-weight: bolder;
+}
+.card-title{
+    line-height: 1;
+}
+.card-text{
+    color: #003c4f;
+}
+.volunteer{
+    text-align: center;
+    background-color: #93bbe5;
+    width: 80%;
+    padding: 40px;
+    margin: auto;
+    position: relative;
+    top: -40px;
+    z-index: 1;
+    -webkit-box-shadow: 5px 5px 15px -1px #000; 
+    box-shadow: 5px 5px 15px -1px #000;
+}
+.volunteer i{
+    color: red;
+    animation: hearbeat 1.5s linear infinite;
+}
+@keyframes hearbeat{
+    0%{transform: scale(1,1);}
+    50%{transform: scale(1.9,1.9);}
+}
+.sponsers{
+    height: 200px;
+    background: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* END FRONT-PAGE.php MAIN-CONTENT*/
+/*BEGIN PAGE.PHP*/
+@media screen and (max-width: 414px) {
+    .content{
+        margin: 20px;
+    }
+}
+.content h2{
+    font-weight: 100;
+}
+.page-title{
+    position: relative;
+    z-index: 0;
+    font-size: 3.3em;
+    font-weight: 100;
+    color: #fff;
+}
+@media screen and (max-width: 1676px) {
+    .page-title{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 1454px) {
+    .page-title{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 996px) {
+    .page-title{
+        font-size: 1.3em;
+    }
+}
+.page-banner{
+    background-color: #23578f;
+}
+
+.post{
+    background-color: #23578f;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0 5px 0;
+    padding: 20px 0 10px 0;
+}
+.page-hr{
+    border: 1px solid #9dcd5a;
+}
+/*---------------------------------------------------------Contact Page----------------------------------------------------------------------*/
+.contact-page{
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+.contact-us-fafa-interpreting{
+    font-size: 4em;
+    color:  #003c4f
+}
+.hr-page{
+    color: #003c4f;
+    border: solid 4px #003c4f;
+}
+.social-media-page{
+    margin: 20px 0 20px 0;
+}
+.page-social{
+    background-color: #93bbe5;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.ul-page{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.ul-page li{
+    margin: 10px;
+    font-size: 2em;
+}
+.ul-page a{
+    color: #003c4f;
+}
+/*----------------------------------------------------------Donate Page---------------------------------------------------------------------*/
+
+.donate-banner{
+    display: flex;
+    height: 300px;
+    position: relative;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.donate-banner img{
+    position: absolute;
+    width: 100%;
+}
+.donate-banner-tagline{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    align-self: center;
+}
+.donate-block-1{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+.donate-block-5{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    font-size: 1.5em;
+}
+.donate-block-2{
+    width: 50%;
+    margin: 50px auto;
+    position: relative;
+    display: flex;
+    height: 200px;
+    background-color: #003c4f;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.donate-block-2 p{
+    width: 50%;
+}
+.donate-block-2 a:visited{
+    width: 50%;
+    color: #003c4f;
+}
+.or{
+    text-align: center;
+    font-size: 1.5em;
+}
+.donate-button{
+    position: absolute;
+    bottom: -30px;
+}
+.donate-button button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #9dcd5a;
+    color: #003c4f;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.donate-button button a{
+    color: #003c4f;
+}
+
+.donate-button button:hover,
+button:focus {
+    background: #93bbe5;
+}
+
+.donate-button button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.donate-button button:active {
+    transform: scale(0.99);
+}
+.donate-heart{
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    padding: 40px;
+    margin: auto;
+    position: relative;
+    top: -40px;
+    z-index: 1;
+}
+.donate-heart i{
+    color: red;
+    animation: hearbeat 1.5s linear infinite;
+}
+.donate-bottom-banner img{
+    width: 100%;
+}
+@media only screen and (max-width: 1491px) {
+    .donate-banner-tagline{
+     font-size: 0.8em;
+    }
+    .donate-banner{
+        height: 250px;
+    }
+   }
+   #paypal{
+       background: #23578f;
+   }
+   #etransfer{
+       background: #93bbe5;
+       color: #003c4f;
+   }
+@media only screen and (max-width: 891px) {
+    .donate-banner-tagline{
+        font-size: 0.5em;
+        align-self: auto;
+       }
+       .donate-banner{
+           height: 150px;
+       }
+   }
+   @media only screen and (max-width: 540px) {
+       .donate-banner{
+        letter-spacing: unset;
+        display: block;
+        margin-bottom: 30px;
+       }
+       .donate-banner img{
+           position: unset;
+           height: 60px;
+       }
+        .donate-banner-tagline{
+            font-size: 0.6em;
+            color: #005a87;
+       }
+       .donate-block-1{
+           width: 90%;
+           font-size: 0.9em;
+           margin: 30px auto;
+       }
+       .donate-block-1 h1{
+           line-height: 30px;
+           margin-bottom: 10px;
+       }
+       .donate-block-2{
+           width: unset;
+           font-size: 1em;
+       }
+       .donate-block-2 p{
+           width: 90%;
+       }
+       .donate-block-5{
+        width: 90%;
+        font-size: 1em;
+    }
+   }
+   @media only screen and (min-width: 2000px) {
+       .donate-banner{
+           height: 450px;
+       }
+   }
+
+/*----------------------------------------------------------Membership Page---------------------------------------------------------------------*/
+.membership-page-columns{
+    min-height: 500px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+}
+.membership-page-fafa-icon{
+    text-align: center;
+}
+.membership_application_link_color a{
+    color: white;
+}
+/*----------------------------------------------------------History Page---------------------------------------------------------------------*/
+.history-page{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.historyPageGallery{
+    justify-content: center;
+}
+/*----------------------------------------------------------about Page---------------------------------------------------------------------*/
+.about{
+    font-size: 1.3em;
+}
+.about-page-board .wp-block-group__inner-container{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.our-values-list{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.our-values-list ul{
+    list-style-type: disc;
+}
+/*----------------------------------------------------------Volunteer Page---------------------------------------------------------------------*/
+.volunteer-page{
+    max-width: 750px;
+    margin: 0 auto;
+}
+/*----------------------------------------------------------All Pages---------------------------------------------------------------------*/
+.wp-block-separator.is-style-wide {
+    border-bottom-width: 10px;
+    border-color:  #9dcd5a;
+}
+
+/*END PAGE.PHP*/
+/*BEGIN page-search.php */
+.search-form{
+    max-width: 750px;
+    margin: 50px auto;
+    background-color: #003c4f;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+.search-form input{
+    background-color: #003c4f;
+    font-size: 3em;
+    color: #93bbe5;
+    border-radius: 10px;
+}
+.search-results{
+    text-align: center;
+}
+/*END page-search.php */
+/*BEGIN SINGLE.PHP*******************************************SERVICE********************/
+
+.row-content{
+    width: 50%;
+    margin-top: 20px;
+    padding-top: 50px;
+}
+@media only screen and (max-width: 1016px) {
+   .row-content{
+    width: unset;
+   }
+  }
+.generic-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.generic-content .row img{
+    max-width: 100%;
+}
+.single-content iframe{
+    max-width: 100%;
+}
+
+
+.service-content{
+    max-width: 70%;
+    margin: 20px auto;
+}
+/* .service-content a{
+    color: white;
+} */
+/* .service-content .block-content ul{
+    list-style-type: none;
+} */
+@media only screen and (max-width: 1016px) {
+    .service-content{
+        max-width: 100%;
+        padding: 20px 30px 20px 20px;
+        margin-top: 50px;
+        font-size: .9em;
+    }
+    .block-content .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+.service-title{
+    position: relative;
+    padding: 10px;
+    color: white;
+}
+.service-asl-button{
+    position: relative;
+    top:-55px;
+    left: 155px;
+    height: 70px;
+    width: 70px;
+    cursor: grab; 
+}
+.service-asl{
+    position: relative;
+    right: 200;
+    z-index: 3;
+}
+@media only screen and (max-width: 1016px) {
+    .service-asl iframe {
+      width: 300px;
+      height: 200px;
+    }
+  }
+.block-content{
+    margin: 20px 0;
+    padding: 20px;
+}
+.block-content ul{
+    list-style-type: disc;
+}
+.aslClassesButton{
+    width: unset !important;
+}
+
+
+/*END SINGLE.PHP*/
+/*BEGIN SINGLE-BOOK.PHP*/
+.single-book-bag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+/*END SINGLE-BOOK.PHP*/
+/*BEGIN SINGLE-EVENT.PHP*/
+
+/*END SINGLE-EVENT.PHP*/
+
+/*------------------------------------------------------------BEGIN ARCHIVE.PHP*/
+.archive-catch-line{
+    background-color: #003c4f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.archive-page{
+    margin-bottom: 10px;
+}
+.archive-page hr{
+    color: #9dcd5a ;
+}
+.archive-top-two{
+    margin: 50px;
+}
+.archive-top-two ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.archive-top-two li{
+    margin: 10px 300px 10px 0;
+}
+
+.archive-body{
+    width: 400px;
+    position: relative;
+}
+@media only screen and (max-width: 414px) {
+    .archive-top-two {
+      margin: 20px;
+    }
+    .archive-top-two ul li img{
+       width: 350px;
+    }
+    .archive-top-two li {
+        margin: unset;
+        margin-top: 20px;
+    }
+    .archive-body{
+        width: 350px;
+    }
+  }
+@media only screen and (max-width: 414px) {
+    .archive-body iframe {
+      width: 300px;
+      height: 200px;
+    }
+  }
+.archive-bottom-half{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+@media only screen and (max-width: 414px) {
+  .archive-bottom-half {
+    display: block;
+  }
+}
+.archive-page .right-side{
+    background-color: #93bbe5;
+}
+.archive-social-media{
+    margin-top: 100px;
+}
+.archive-social{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.archive-social li{
+    font-size: 2em;
+    margin: 10px;
+}
+.archive-social a{
+    color: #003c4f;
+}
+.archive-posts ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 10px;
+}
+.right-side li{
+    margin: 10px 10px 40px 10px;
+}
+.right-side li a{
+    color: #003c4f;
+    transition: font-size 0.2s, box-shadow 0.2s, margin 0.2s, padding 0.2s;
+}
+.right-side li:hover{
+    font-size: 1.1em;
+    border-radius: 10px; 
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(60,146,255,0.35); 
+    box-shadow: 5px 5px 15px 5px rgba(60,146,255,0.35);
+    margin: 5px;
+}
+/*----------------------------------------------------------------------Begin ARCHIVE-STAFF.PHP*/
+.archive-staff {
+    margin: 0 auto;
+}
+.archive-staff-body{
+    text-align: center;
+}
+.archive-staff ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.archive-staff li{
+    flex-shrink: 1;
+    width: 33%;
+}
+@media screen and (max-width: 1290px) {
+  .archive-staff li {
+    flex-shrink: 1;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+    .archive-staff li {
+      flex-shrink: 1;
+      width: 100%;
+    }
+  }
+.archive-staff .card{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, #fff, rgb(248, 246, 246), rgb(216, 214, 214));
+    padding: 20px;
+    height: 400px;
+}
+.email{
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    left: 55px;
+    width: 200px;
+    padding: 20px;
+    background: #9dcd5a;
+}
+/*----------------------------------------------------------------------END ARCHIVE-STAFF.PHP*/
+/*END ARCHIVE.PHP*/
+
+/*BEGIN INDEX.php*/
+
+.content-container{
+    text-align: center;
+}
+
+/*BEGIN FOOTER */
+footer{
+    clear: both;
+    background: #003c4f;
+    color: white;
+    line-height: 1.5em;
+}
+footer a{
+    color: white;
+}
+.newsletter-signup{
+    background: #9dcd5a;
+    text-align: center;
+    color: #003c4f;
+    padding: 10px;
+}
+.footer-columns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 75px
+}
+.col-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-evenly;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+}
+.col-2 .menu, .col-3 .menu{
+    display: flex;
+    flex-direction: column;
+}
+.address {
+    margin-bottom: 20px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+footer .social{
+    display: flex;
+    font-size: 1.8em;
+}
+footer .social-media ul{
+    list-style-type: none;
+}
+.social-media ul li{
+    margin: 20px;
+}
+.donate_footer{
+    background: white;
+    padding: 10px 40px;
+    margin-left: 0;
+    border-radius: 10px;
+}
+#donate_footer{
+    color: #003c4f;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.toTop{
+    text-align: center;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+.fa-arrow-up{
+    padding: 10px;
+}
+
+@media screen and (max-width: 414px) {
+    .mainPosts{
+        background-color: white;
+    }
+    .logo, .nav2{
+        display: none;
+    }
+    .topnav {
+        display: block;
+      }
+}
+@media screen and (max-width: 1240px) {
+    .mainLinks ul{
+        flex-wrap: wrap;
+    }
+    video{
+        display: none;
+    }
+   
+    .page-asl{
+        z-index: 1;
+    }
+    .footer-columns{
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+    .col-2{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+    }
+}
+/* BEGIN LOGIN PAGE */
+
+.login h1 a{
+    background-image: url("wp-content/themes/sdhhs/images/login-page-logo.jpg ");
+}
+.wp-core-ui .button-primary {
+    background:#003c4f;
+    border-color: #003c4f;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+}
+.login {
+    background-color: #003c4f;
+}
